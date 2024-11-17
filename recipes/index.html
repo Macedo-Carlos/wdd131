@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Carlos Macedo">
+    <link rel="icon" href="images/recipe-book.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RECIPEBOOK</title>
     <link rel="stylesheet" href="recipes.css">
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="RecipeBook">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="RecipeBook is a collection of delicious, easy-to-follow recipes for every occasion.">
+    <meta property="og:image" content="https://macedo-carlos.github.io/wdd131/recipes/images/apple-crisp.jpg">
+    <meta property="og:url" content="https://macedo-carlos.github.io/wdd131/recipes/index.html">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RecipeBook">
+    <meta name="twitter:description" content="RecipeBook is a collection of delicious, easy-to-follow recipes for every occasion.">
+    <meta name="twitter:image" content="https://macedo-carlos.github.io/wdd131/recipes/images/apple-crisp.jpg">
+
 </head>
 <body>
     <header>
@@ -15,7 +30,6 @@
     </header>
     
     <main>
-        <!-- Search Form Moved Here -->
         <form id="search-form">
             <input type="text" id="search-bar" placeholder="Search for recipes..." aria-label="Search recipes">
             <button type="submit">
@@ -23,18 +37,18 @@
             </button>
         </form>
 
-        <!-- Gray Separator Line -->
         <hr class="separator">
 
         <section id="recipes">
             <article class="recipe-card">
                 <img src="./images/sweet-potato-waffle-md.jpg" alt="Sweet Potato Waffles" class="recipe-image">
                 <div class="recipe-details">
+                    <div class="categories">
+                        <div class="category">Waffles</div>
+                        <div class="category">Sweet Potato</div>
+                        <div class="category">Side</div>
+                    </div>
                     <h2>Sweet Potato Waffles</h2>
-                    <div class="category">Waffles</div>
-                    <div class="category">Sweet Potato</div>
-                    <div class="category">Side</div>
-                    <!-- Updated Rating Section -->
                     <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
                         <span aria-hidden="true" class="icon-star">⭐</span>
                         <span aria-hidden="true" class="icon-star">⭐</span>
