@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECIPEBOOK</title>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="./images/recipe-book.png" alt="Recipe Book Logo" class="logo">
+            <h1>RECIPEBOOK</h1>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Search Form Moved Here -->
+        <form id="search-form">
+            <input type="text" id="search-bar" placeholder="Search for recipes..." aria-label="Search recipes">
+            <button type="submit">
+                <img src="./images/search.svg" alt="Search Icon">
+            </button>
+        </form>
+
+        <!-- Gray Separator Line -->
+        <hr class="separator">
+
+        <section id="recipes">
+            <article class="recipe-card">
+                <img src="./images/sweet-potato-waffle-md.jpg" alt="Sweet Potato Waffles" class="recipe-image">
+                <div class="recipe-details">
+                    <h2>Sweet Potato Waffles</h2>
+                    <div class="category">Waffles</div>
+                    <div class="category">Sweet Potato</div>
+                    <div class="category">Side</div>
+                    <!-- Updated Rating Section -->
+                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                    <p class="description">Savory waffles made with Sweet potato with a hint of Ginger</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="./images/instagram_icon.svg" alt="Instagram Icon">
+            </a>
+            <a href="https://youtube.com" aria-label="YouTube">
+                <img src="./images/youtube_icon.svg" alt="YouTube Icon">
+            </a>
+            <a href="https://pinterest.com" aria-label="Pinterest">
+                <img src="./images/pinterest_icon.svg" alt="Pinterest Icon">
+            </a>
+        </div>
+        <p>
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+                Recipe icons created by Freepik - Flaticon
+            </a>
+        </p>
+        <!-- Social Media Icons Attribution: Icons provided by AlfredoCreates on Iconfinder -->
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

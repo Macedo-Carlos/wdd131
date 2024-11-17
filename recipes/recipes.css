@@ -1,0 +1,251 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+}
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Header and Footer Background */
+header, footer {
+    background-color: #f9f9f9;
+    color: var(--text-dark);
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Search Form */
+form {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 1rem;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Gray Line Separator */
+.separator {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Main Section */
+main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f9f9f9;
+}
+
+#recipes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Recipe Card */
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid black; /* Black outline */
+    padding: 15px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.recipe-details {
+    padding: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.category {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid black; /* Black outline for button-like effect */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon-star, .icon-star-empty {
+    font-size: 1.5rem;
+    color: #f1c40f;
+}
+
+.icon-star-empty {
+    color: #ccc;
+}
+
+.description {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 20px;
+    display: none; /* Hidden on mobile by default */
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-bottom: 10px;
+}
+
+.social-media a img {
+    width: 24px;  /* Smaller icon size */
+    height: 24px; /* Smaller icon size */
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+footer p {
+    font-size: 0.875rem;
+}
+
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+    header, footer {
+        text-align: center;
+    }
+
+    .recipe-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .description {
+        display: block; /* Show description on mobile */
+    }
+
+    /* Stack social media icons vertically */
+    .social-media {
+        flex-direction: column;
+    }
+}
+
+/* Media Queries for Wide Screens (Desktop) */
+@media (min-width: 601px) {
+    /* Recipe layout for larger screens */
+    .recipe-card {
+        flex-direction: row;
+    }
+
+    .recipe-image {
+        width: 33.33%;
+        height: auto;
+    }
+
+    .recipe-details {
+        padding-left: 20px;
+        text-align: left;
+        width: 66.66%;
+    }
+
+    .description {
+        display: block; /* Ensure description shows up on wider screens */
+    }
+}
